@@ -14,6 +14,11 @@ module.exports = {
     path: BUILD_DIR,
     filename: 'bundle.js',
   },
+  devServer: {
+    inline: true,
+    contentBase: './dist',
+    port: 8080
+  },
   module: {
     loaders: [{
       test: /\.js$/,
