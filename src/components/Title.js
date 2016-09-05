@@ -18,15 +18,7 @@ class Title extends Component {
 	render() {
 		return (
 			<div>
-				<Titleinfo 
-					Title={this.state.data.Title}
-					Plot={this.state.data.Plot}
-					Poster={this.state.data.Poster}
-					Actors={this.state.data.Actors}
-					Writers={this.state.data.Writer}
-					Rating={this.state.data.imdbRating}
-					Voters={this.state.data.imdbVotes}
-				/>
+				<Titleinfo data={this.state.data} />
 			</div>
 		)
 	}
